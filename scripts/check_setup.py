@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import json
 import shutil
+import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -17,10 +18,20 @@ def status(label: str, ok: bool, detail: str = "") -> None:
 def main() -> int:
     failures = 0
 
-    for command in ("git", "python", "node", "npm", "codex"):
-        found = shutil.which(command)
-        status(command, bool(found), found or "not on PATH")
+    commands = {
+        "git": shutil.which("git"),
+        "python3": sys.executable,
+        "node": shutil.which("node"),
+        "npm": shutil.which("npm"),
+        "codex": shutil.which("codex"),
+    }
+    for label, found in commands.items():
+        status(label, bool(found), found or "not on PATH")
         failures += int(not found)
+
+    py_ok = sys.version_info >= (3, 10)
+    status("Python >= 3.10", py_ok, sys.version.split()[0])
+    failures += int(not py_ok)
 
     manifest_path = ROOT / "integrations" / "repositories.json"
     try:
