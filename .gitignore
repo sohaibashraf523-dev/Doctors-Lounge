@@ -1,0 +1,12 @@
+.tools/
+.venv/
+.env
+.env.*
+!.env.example
+.codex/config.toml
+node_modules/
+__pycache__/
+*.pyc
+playwright/.auth/
+*.log
+.DS_Store
