@@ -1,0 +1,10 @@
+{
+  "name": "doctors-lounge-ai-workspace",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "playwright:mcp": "npx -y @playwright/mcp@latest",
+    "n8n": "npx -y n8n",
+    "check": "python scripts/check_setup.py"
+  }
+}
