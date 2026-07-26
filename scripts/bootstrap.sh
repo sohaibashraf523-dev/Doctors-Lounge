@@ -178,7 +178,7 @@ cat <<'EOF'
 Setup completed.
 
 Next commands:
-  codex --login
+  codex login
   codex
 
 Restart Terminal or run `source ~/.zprofile` if a newly installed command is not immediately found.
