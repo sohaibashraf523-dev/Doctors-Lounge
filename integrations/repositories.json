@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "repositories": [
+    {
+      "name": "codex",
+      "repository": "https://github.com/openai/codex.git",
+      "purpose": "Official Codex CLI source and documentation",
+      "mode": "reference"
+    },
+    {
+      "name": "openai-skills",
+      "repository": "https://github.com/openai/skills.git",
+      "purpose": "Official reusable Codex skills",
+      "mode": "install-selected-skills"
+    },
+    {
+      "name": "openai-cookbook",
+      "repository": "https://github.com/openai/openai-cookbook.git",
+      "purpose": "Official OpenAI implementation examples",
+      "mode": "reference"
+    },
+    {
+      "name": "agents-md",
+      "repository": "https://github.com/agentsmd/agents.md.git",
+      "purpose": "AGENTS.md specification and examples",
+      "mode": "reference"
+    },
+    {
+      "name": "mcp-servers",
+      "repository": "https://github.com/modelcontextprotocol/servers.git",
+      "purpose": "Reference MCP servers",
+      "mode": "reference"
+    },
+    {
+      "name": "playwright",
+      "repository": "https://github.com/microsoft/playwright.git",
+      "purpose": "Browser automation and Playwright MCP reference",
+      "mode": "reference-and-npx"
+    },
+    {
+      "name": "apps-sdk-examples",
+      "repository": "https://github.com/openai/openai-apps-sdk-examples.git",
+      "purpose": "ChatGPT Apps SDK and MCP examples",
+      "mode": "reference"
+    },
+    {
+      "name": "agents-python",
+      "repository": "https://github.com/openai/openai-agents-python.git",
+      "purpose": "Python agent framework",
+      "mode": "package-and-reference"
+    },
+    {
+      "name": "agents-js",
+      "repository": "https://github.com/openai/openai-agents-js.git",
+      "purpose": "JavaScript and TypeScript agent framework",
+      "mode": "reference"
+    },
+    {
+      "name": "n8n",
+      "repository": "https://github.com/n8n-io/n8n.git",
+      "purpose": "Workflow automation layer",
+      "mode": "reference-and-npx"
+    }
+  ]
+}
