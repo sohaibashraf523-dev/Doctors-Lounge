@@ -1,0 +1,8 @@
+# Copy to .codex/config.toml locally. Do not commit secrets.
+
+[mcp_servers.playwright]
+command = "npx"
+args = ["-y", "@playwright/mcp@latest"]
+
+# Add remote MCP servers only after verifying their operator and permissions.
+# Authentication tokens must be supplied through the environment, never here.
